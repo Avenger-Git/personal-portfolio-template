@@ -95,15 +95,33 @@ p {
   color: var(--main-text-color);
 }
 
-.header-info-btn > button {
-  background-color: var(--started-btn-color);
+.header-info-btn {
+  display: flex;
+  justify-content: center; /* of left/right/space-between als je dat wil */
+  align-items: center;
+  margin-top: 20px; /* optioneel */
+}
+
+.header-info-btn > a {
+  display: inline-block;
+  background-color: red;
   color: var(--name-text-color);
   border: none;
   padding: 3% 15%;
   border-radius: 5px;
-  box-shadow: 0px 2.5px 15px 0px var(--started-btn-shadow);
+  box-shadow: 0px 4px 25px rgba(255, 50, 50, 0.35);
   font-weight: bold;
   font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.header-info-btn > a:hover {
+  background-color: var(--started-btn-hover-color); /* voeg deze toe aan je variabelen */
+  box-shadow: 0px 4px 20px 0px rgba(255, 0, 0, 0.5);
+
 }
 
 .header-image-container {
@@ -116,6 +134,7 @@ p {
   height: 100%;
   width: 40%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .header-company p {
@@ -162,6 +181,67 @@ p {
   grid-template-columns: repeat(2, 1fr);
   margin-top: 10%;
 }
+
+/* Algemene knopstijl voor alle buttons/links binnen de case-secties */
+.case-first-work a,
+.case-second-work a,
+.case-third-work a {
+  display: inline-block;
+  box-shadow: 0px 2.5px 15px 0px rgba(255, 0, 0, 0.4);
+  color: red;
+  border: none;
+  padding: 3% 15%;
+  border-radius: 5px;
+  box-shadow: 0px 2.5px 15px 0px var(--started-btn-shadow);
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.case-first-work a:hover,
+.case-second-work a:hover,
+.case-third-work a:hover {
+  background-color: var(--started-btn-hover-color);
+  box-shadow: 0px 4px 20px 0px var(--started-btn-shadow);
+}
+.case-first-work,
+.case-second-work,
+.case-third-work {
+  display: grid;
+  gap: 5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10%;
+}
+
+/* Algemene knopstijl voor alle buttons/links binnen de case-secties */
+.case-first-work a,
+.case-second-work a,
+.case-third-work a {
+  display: inline-block;
+  background-color: var(--started-btn-color);
+  color: var(--name-text-color);
+  border: none;
+  padding: 3% 15%;
+  border-radius: 5px;
+  box-shadow: 0px 2.5px 15px 0px var(--started-btn-shadow);
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.case-first-work a:hover,
+.case-second-work a:hover,
+.case-third-work a:hover {
+  background-color: var(--started-btn-hover-color);
+  box-shadow: 0px 4px 20px 0px var(--started-btn-shadow);
+}
+
 
 .work-text {
   margin-top: 5%;
