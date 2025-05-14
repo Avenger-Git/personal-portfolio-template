@@ -193,9 +193,11 @@ p {
 .case-first-image,
 .case-second-image,
 .case-third-image {
-  background-color: var(--header-nav-bg-color);
+  background-color: White;
   border-radius: 10px;
-  height: 100%;
+  width: 15vw;
+  height: 15vw;
+  margin-top: 6.5vw;
 }
 
 .case-second-btn button {
@@ -385,4 +387,8 @@ input,
 .footer span {
   color: red;
   font-size: 1.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
 }
