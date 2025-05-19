@@ -258,3 +258,74 @@ textarea {
 html {
   scroll-behavior: smooth;
 }
+
+.testimonial {
+  margin-top: 10%;
+  background-color: var(--header-bg-color);
+  color: var(--main-text-color);
+}
+
+.testimonial-content-container {
+  width: 80%;
+  margin-left: 10%;
+  padding-bottom: 5%;
+}
+
+.testimonial-header {
+  width: 80%;
+  text-align: center;
+  padding: 5% 10% 5%;
+  margin-left: 10%;
+}
+
+.testimonial-header h2 {
+  color: var(--name-text-color);
+  margin-bottom: 2%;
+}
+
+.testimonial-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 5rem;
+}
+
+.testimonial-container {
+  border: 1px solid var(--main-text-color);
+  border-radius: 5px;
+  padding: 5%;
+}
+.recent-header {
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  padding: 5% 0%;
+}
+
+.recent-header h2 {
+  margin-bottom: 3%;
+}
+
+.recent-main {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(2, 2fr) 0.5fr;
+}
+
+.recent-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+.recent-btn button {
+  border: none;
+  background-color: var(--started-btn-color);
+  color: var(--name-text-color);
+  padding: 2% 8%;
+  border-radius: 5px;
+  font-weight: bold;
+  box-shadow: 0px 5px 20px 0px var(--started-btn-shadow);
+}
+
