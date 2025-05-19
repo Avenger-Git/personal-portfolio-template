@@ -7,17 +7,14 @@
   <link rel="stylesheet" href="style/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-          href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap"
-          rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 <div class="header">
   <div class="nav-section">
     <a href="#Over Mij">Home</a>
     <a href="#opleidingen">Opleidingen</a>
-    <a href="">Eerdere opdrachten</a>
+    <a href="#">Eerdere opdrachten</a>
     <a href="#Recente Projecten">Recente projecten</a>
     <a href="#Contact">Contact</a>
     <div class="link-section"></div>
@@ -59,9 +56,7 @@
       <h2>Opleidingen</h2>
     </div>
     <div class="case-text">
-      <p>
-        Hier vind je eerdere opleidingen die ik heb gevolgd, aan het volgen ben of heb afgerond.
-      </p>
+      <p>Hier vind je eerdere opleidingen die ik heb gevolgd, aan het volgen ben of heb afgerond.</p>
     </div>
   </div>
 
@@ -119,15 +114,21 @@
     <p>Stuur me een bericht via onderstaand formulier.</p>
   </div>
   <div class="contact-main">
-    <label for="naam">Naam</label>
-    <input type="text" id="naam" />
-    <label for="email">Email</label>
-    <input type="email" id="email" />
-    <label for="bericht">Bericht</label>
-    <textarea id="bericht" rows="5"></textarea>
-    <div class="form-submit">
-      <button>Verstuur</button>
-    </div>
+    <form action="https://formsubmit.co/stephan.deboom@delta.nl" method="POST">
+      <label for="naam">Naam</label>
+      <input type="text" id="naam" name="naam" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="bericht">Bericht</label>
+      <textarea id="bericht" name="bericht" rows="5" required></textarea>
+      <div class="form-submit">
+        <button type="submit">Verstuur</button>
+      </div>
+    </form>
+  </div>
+
   </div>
 </div>
 
