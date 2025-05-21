@@ -18,8 +18,11 @@
     <a href="#">Eerdere opdrachten</a>
     <a href="#Recente Projecten">Recente projecten</a>
     <a href="#Contact">Contact</a>
+    <!-- Dark mode toggle knop -->
+    <button id="theme-toggle" class="theme-button">🌙</button>
     <div class="link-section"></div>
   </div>
+
   <div id="Over Mij" class="header-main-section">
     <div class="header-info">
       <div class="header-info-name">
@@ -39,6 +42,7 @@
       <img src="image/CV%20image.jpg" alt="Profielfoto" class="header-image" />
     </div>
   </div>
+
   <div class="header-company">
     <p>Bekend met:</p>
     <div class="company-logo-container">
@@ -119,6 +123,7 @@
       </p>
     </div>
     <div class="testimonial-main">
+      <!-- Testimonials -->
       <div class="testimonial-container">
         <div class="testi-text">
           <p>
@@ -126,7 +131,6 @@
           </p>
         </div>
         <div class="testi-info">
-          <div class="testi-profile"></div>
           <div class="testi-name">Dhr. Peters – Docent Software Development</div>
         </div>
       </div>
@@ -137,7 +141,6 @@
           </p>
         </div>
         <div class="testi-info">
-          <div class="testi-profile"></div>
           <div class="testi-name">Nina van Dijk – Projectpartner</div>
         </div>
       </div>
@@ -148,7 +151,6 @@
           </p>
         </div>
         <div class="testi-info">
-          <div class="testi-profile"></div>
           <div class="testi-name">Rick de Vries – Klasgenoot</div>
         </div>
       </div>
@@ -159,7 +161,6 @@
           </p>
         </div>
         <div class="testi-info">
-          <div class="testi-profile"></div>
           <div class="testi-name">Lisa Meijer – Medestudent</div>
         </div>
       </div>
@@ -167,57 +168,34 @@
   </div>
 </div>
 
+<!-- Recent Work -->
 <div class="recent-work">
   <div class="recent-header">
     <h2>Recent Work</h2>
     <p>
       Solving user & business problems since last 5+ years. Lorem ipsum
-      dolor sit, amet consectetur adipisicing elit. Sit optio libero magni
-      aliquid quia nam ab cumque maxime, debitis hic nulla porro, molestiae
-      temporibus, consectetur iusto possimus ipsam minima quos!
+      dolor sit, amet consectetur adipisicing elit.
     </p>
   </div>
   <div class="recent-main">
-    <div class="left-arrow">
-      <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-                x="-0.5"
-                y="0.5"
-                width="28.8929"
-                height="29"
-                rx="14.4464"
-                transform="matrix(-1 0 0 1 28.8931 0)"
-                stroke="#9C9C9C"
-        />
-        <path
-                d="M12.2597 14.3736L16.3793 10.2592C16.7253 9.9136 17.2875 9.9136 17.6335 10.2592C17.9796 10.6048 17.9796 11.1663 17.6335 11.5119L14.1411 15L17.6335 18.4881C17.9796 18.8337 17.9796 19.3952 17.6335 19.7408C17.4605 19.9136 17.2335 20 17.0064 20C16.7793 20 16.5523 19.9136 16.3793 19.7408L12.2597 15.6264C11.9137 15.2808 11.9137 14.7193 12.2597 14.3737L12.2597 14.3736Z"
-                fill="#9C9C9C"
-        />
-      </svg>
-    </div>
+    <div class="left-arrow">←</div>
     <div class="recent-work-container middle-margin">
       <div class="recent-image-container">
         <div class="recent-image">
           <img src="image/CV%20image.jpg" alt="Project afbeelding" />
         </div>
-      <div class="recent-text">
-        <div class="recent-work-header">
-          <h2>Work name here</h2>
-        </div>
-        <div class="recent-desc">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua
-          </p>
-        </div>
-        <div class="recent-btn">
-          <button>Know more ></button>
+        <div class="recent-text">
+          <div class="recent-work-header">
+            <h2>Work name here</h2>
+          </div>
+          <div class="recent-desc">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed do eiusmod tempor incididunt ut labore.
+            </p>
+          </div>
+          <div class="recent-btn">
+            <button>Know more ></button>
+          </div>
         </div>
       </div>
     </div>
@@ -226,36 +204,14 @@
         <div class="recent-image"></div>
       </div>
       <div class="recent-text">
-        <div class="recent-work-header">
-        </div>
+        <div class="recent-work-header"></div>
       </div>
     </div>
-    <div class="right-arrow">
-      <svg
-              width="30"
-              height="30"
-              viewBox="0 0 30 30"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect
-                x="0.5"
-                y="0.5"
-                width="28.8929"
-                height="29"
-                rx="14.4464"
-                stroke="#9C9C9C"
-        />
-        <path
-                d="M17.6333 14.3736L13.5138 10.2592C13.1678 9.9136 12.6056 9.9136 12.2595 10.2592C11.9135 10.6048 11.9135 11.1663 12.2595 11.5119L15.752 15L12.2595 18.4881C11.9135 18.8337 11.9135 19.3952 12.2595 19.7408C12.4325 19.9136 12.6596 20 12.8867 20C13.1137 20 13.3408 19.9136 13.5138 19.7408L17.6333 15.6264C17.9794 15.2808 17.9794 14.7193 17.6333 14.3737L17.6333 14.3736Z"
-                fill="#9C9C9C"
-        />
-      </svg>
-    </div>
+    <div class="right-arrow">→</div>
   </div>
 </div>
-</div>
 
+<!-- Contact -->
 <div id="Contact" class="contact">
   <div class="contact-header">
     <h2>Neem contact op</h2>
@@ -271,6 +227,7 @@
 
       <label for="bericht">Bericht</label>
       <textarea id="bericht" name="bericht" rows="5" required></textarea>
+
       <div class="form-submit">
         <button type="submit">Verstuur</button>
       </div>
@@ -278,9 +235,12 @@
   </div>
 </div>
 
+<!-- Footer -->
 <div class="footer">
   <p>Gemaakt door <span>Stephan de Boom</span></p>
 </div>
 
+<!-- JavaScript-bestand -->
+<script src="Scripts.js"></script>
 </body>
 </html>

@@ -1,9 +1,27 @@
 :root {
   --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* DARK MODE DEFAULT */
+body.dark-mode {
   --header-bg-color: rgba(8, 8, 8, 1);
   --main-text-color: rgba(156, 156, 156, 1);
   --header-nav-bg-color: rgba(27, 27, 27, 1);
   --name-text-color: white;
+  --btn-bg-color: red;
+  --btn-hover-bg: darkred;
+  --btn-shadow: rgba(255, 0, 0, 0.5);
+}
+
+/* LIGHT MODE */
+body:not(.dark-mode) {
+  --header-bg-color: #f1f1f1;
+  --main-text-color: #333333;
+  --header-nav-bg-color: #ffffff;
+  --name-text-color: black;
+  --btn-bg-color: #007bff;
+  --btn-hover-bg: #0056b3;
+  --btn-shadow: rgba(0, 123, 255, 0.5);
 }
 
 * {
@@ -89,12 +107,12 @@ p {
 .form-submit button,
 .contact-button {
   display: inline-block;
-  background-color: red;
+  background-color: var(--btn-bg-color);
   color: white;
   border: none;
   padding: 1rem 2rem;
   border-radius: 5px;
-  box-shadow: 0px 4px 25px rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 4px 25px var(--btn-shadow);
   font-weight: bold;
   font-size: 1em;
   text-decoration: none;
@@ -106,8 +124,8 @@ p {
 .header-info-btn > a:hover,
 .form-submit button:hover,
 .contact-button:hover {
-  background-color: darkred;
-  box-shadow: 0px 4px 20px 0px rgba(139, 0, 0, 0.7);
+  background-color: var(--btn-hover-bg);
+  box-shadow: 0px 4px 20px 0px var(--btn-shadow);
 }
 
 .header-image-container {
@@ -295,6 +313,7 @@ html {
   border-radius: 5px;
   padding: 5%;
 }
+
 .recent-header {
   width: 50%;
   margin-left: 25%;
@@ -317,15 +336,34 @@ html {
   display: block;
 }
 
-
-
 .recent-btn button {
   border: none;
-  background-color: var(--started-btn-color);
+  background-color: var(--btn-bg-color);
   color: var(--name-text-color);
   padding: 2% 8%;
   border-radius: 5px;
   font-weight: bold;
-  box-shadow: 0px 5px 20px 0px var(--started-btn-shadow);
+  box-shadow: 0px 5px 20px 0px var(--btn-shadow);
 }
+
+/* Toggle knop */
+.theme-button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: 1rem;
+  color: inherit;
+}
+body.dark-mode .footer span {
+  color: red;
+}
+
+body:not(.dark-mode) .footer span {
+  color: blue;
+}
+body:not(.dark-mode) .nav-section {
+  background-color: #d3d3d3;
+}
+
 
