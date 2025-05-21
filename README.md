@@ -1,4 +1,4 @@
-# Portefolio Stephan de Boom
+# Portfolio Stephan de Boom
 
 # Design by
 
@@ -6,11 +6,11 @@
 
 # Link
 
-Deze komt nog.
+(https://portfolio-stephan-deboom.vercel.app/)
 
 # About
 
-Dit is de portefolio van Stephan.
+Dit is de portfolio van Stephan.
 Op dit moment leer ik voor de opleiding software developer op het Astrum College in velp.
 
 
